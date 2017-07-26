@@ -1,0 +1,362 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" charset="utf-8"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+
+  <!--loading page-->
+  <div class="" id="loading">
+    <div class="loading text-center">
+      <img class="loading-image" src="img/giphy.gif" alt="">
+    </div>
+  </div>
+
+  <!--floating button
+  <div class="query-box" id="send-query" timeout="5000">
+    <div class="" style="padding: 15px 0px 0px 40px">
+      <input class="" type="text" style="opacity: 1;z-index: 1;border: none" placeholder="Enter Your Email Id" id="input">
+        <button type="button" name="button" style="float: right;margin: -2px 20px 10px 0px;background-color: white;border:none;" id="submit"><i class="material-icons" style="float: right;color: grey" id="submit">send</i></button>
+    </div>
+  </div>
+  <div class="floating-button">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color:#00bfbc;" id="float-btn-1">
+      <i class="material-icons">border_color</i>
+    </button>
+  </div>
+  <div class="floating-button" id="icon">
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" style="background-color:#00bfbc;" id="float-btn-2">
+      <i class="material-icons">cancel</i>
+    </button>
+  </div>-->
+
+  <!--first page-->
+    <!--first page for large and med screen-->
+    <div class="  hidden-xs hidden-sm">
+      <div class="row" style="background-color:#2E90CC;height:680px;width: 105%">
+        <div class="col-sm-6">
+          <img src="img/kp_pwa_logo-1.png" alt="" style="height:auto;width:40%;margin: 16% 5% 5% 35%">
+          <div class="" style="margin: 0% 5% 5% 35%;color: white">
+            <p class="animated bounceInLeft" style="font-size: 3.2em;margin: -5% 0% 0% 0%">Krispy Papad</p>
+            <p class="animated bounceInRight" style="font-size: 1.6em;margin: 8% 5% 0% -15%">Bringing Innovations to your chat window</p>
+          </div>
+          <div class="" style="margin: 0% 5% 5% 44%">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="height: 40px;width:160px;font-size:1.2em;color:#2E90CC;background-color:white">
+            Coming Soon
+           </button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img src="img/pixel2.png" alt="" id="img1">
+        </div>
+
+      </div>
+    </div>
+    <!--first page for small screen-->
+    <div class="hidden-lg hidden-md hidden-xs">
+      <div class="row" style="background-color:#2E90CC;height:520px;width: 105%">
+        <div class="col-sm-6">
+          <img src="img/kp_pwa_logo-1.png" alt="" style="height:auto;width:45%;margin: 16% 5% 5% 35%">
+          <div class="" style="margin: 2% 5% 5% 35%;color: white">
+            <p class="animated bounceInLeft" style="font-size: 2.5em">Krispy Papad</p>
+            <p class="animated bounceInRight" style="font-size: 1.3em;margin: 8% 5% 0% -20%">Bringing Innovations to your chat</p>
+            <p class="animated bounceInRight" style="font-size: 1.3em;margin: 0% 0% 0% 23%">window</p>
+          </div>
+          <div class="" style="margin: 0% 5% 5% 38%">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="height: 40px;width:160px;font-size:1.2em;color:#2E90CC;background-color:white">
+            Messenger
+           </button>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img src="img/pixel2.png" alt="" id="img1-sm">
+        </div>
+
+      </div>
+    </div>
+    <!--first page for extra small screen-->
+    <div class="" style="background-size: cover;background-color:#2E90CC">
+      <div class="hidden-lg hidden-md hidden-sm">
+
+        <div class="animated fadeInUp text-center content" style="%">
+          <div class="" style="padding: 15% 10% 0% 0%">
+            <img style="height:auto;width:70%" src="img/kp_pwa_logo-1.png" alt="">
+          </div>
+            <p style="padding-top: 10%;color: white;font-size: 3.2em">Krispy Papad</p>
+            <p style="padding-top: 5%;color: white">Bringing Innovations to your chat window</p>
+            <div class="text-center" style="padding: 5% 0% 25% 0%">
+              <!--<div class="msg_btn">
+                <h3 style="padding: 4% 0% 2% 18%;font-size: 2vw">Messenger</h3>
+              </div>-->
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" style="height: 50px;width:180px;font-size:1.2em;background-color:white;color:#2E90CC">
+               Coming Soon
+             </button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!--second page-->
+    <!--for large and md-->
+    <div class=" hidden-xs hidden-sm">
+      <div class="row">
+          <div class="" style="background-color:#F5F5F5;height:680px;width: 100%">
+            <div class="row">
+              <div class="col-sm-6">
+                 <div class="">
+                   <img src="img/pixel2.png" alt="" id="img2-1">
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                <div style="width: 80%;color:#2E90CC">
+                  <p class="revealOnScroll" style="padding: 40% 10% 10% 20%;font-size: 2.3em" data-animation="bounceInLeft">Heading</p>
+                  <p class="revealOnScroll" style="padding: 0% 0% 10% 20%;font-size: 1.3em" data-animation="bounceInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="" style="background-color:#2E90CC;height:680px;width: 100%">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="" style="width: 80%;color:white">
+              <p class="revealOnScroll" style="padding: 40% 10% 10% 20%;font-size: 2.3em" data-animation="bounceInRight">Heading</p>
+              <p class="revealOnScroll" style="padding: 0% 0% 10% 20%;font-size: 1.3em" data-animation="bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="">
+              <img src="img/pixel2.png" alt="" id="img2-2">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!--for small screen-->
+    <div class="hidden-xs hidden-md hidden-lg">
+      <div class="row" style="padding-top: 5%">
+          <div class="" style="background-color:white;height:520px;width: 100%">
+            <div class="row">
+              <div class="col-sm-6">
+                 <div class="">
+                   <img src="img/pixel2.png" alt="" id="img2-sm-1">
+                 </div>
+              </div>
+              <div class="col-sm-6">
+                <div style="width: 80%;color:#2E90CC">
+                  <p class="revealOnScroll" style="padding: 30% 10% 10% 20%;font-size: 2.3em" data-animation="bounceInLeft">Heading</p>
+                  <p class="revealOnScroll" style="padding: 0% 0% 10% 20%;font-size: 1.3em" data-animation="bounceInRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="" style="background-color:#2E90CC;height:520px;width: 100%">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="" style="width: 80%;color:white">
+              <p class="revealOnScroll" style="padding: 30% 10% 10% 20%;font-size: 2.3em" data-animation="bounceInRight">Heading</p>
+              <p class="revealOnScroll" style="padding: 0% 0% 10% 20%;font-size: 1.3em" data-animation="bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, qui</p>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="">
+              <img src="img/pixel2.png" alt="" id="img2-sm-2">
+            </div>
+          </div>
+        </div>
+       </div>
+      </div>
+
+    </div>
+    <!--for extra small screen-->
+    <div class="">
+      <div class="revealOnScroll hidden-sm hidden-md hidden-lg" style="padding-top: 10%" data-animation="fadeInUp">
+        <div class="text-center" style="margin-top: 0%">
+          <div class="">
+            <img src="img/pixel2.png" alt="" id="img2-xs">
+          </div>
+        </div>
+        <div class="container">
+          <div class="revealOnScroll" style="padding: 10% 5% 5% 5%"  data-animation="fadeInUp">
+            <p class="heading-xs" style="color: #2E90CC">Heading</p>
+            <div id="seconds" class="seconds-xs" style="background-color:#2E90CC">
+              <div id="bar" class="bar"></div>
+            </div>
+            <p class="detail-xs" style="color:#2E90CC">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+          </div>
+        </div>
+
+        <div class="container" style="background-color:#2E90CC">
+
+          <div class="text-center" style="margin-top: 0%">
+            <div class="">
+              <img src="img/pixel2.png" alt="" id="img2-xs">
+            </div>
+          </div>
+
+          <div class="revealOnScroll" style="padding: 5%"  data-animation="fadeInUp">
+            <p class="heading-xs">Heading</p>
+            <div id="seconds" class="seconds-xs">
+              <div id="bar" class="bar"></div>
+            </div>
+            <p class="detail-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et ut labore et ut labore et</p>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!--fb start for lg md and xs-->
+
+
+   <!--footer for large and md and sm-->
+    <div class="" style="">
+      <div class="row hidden-xs" style="background-color:#F5F5F5">
+        <div class="col-sm-2" style="padding: 4% 0% 4% 6%">
+          <div class="">
+            <img src="img/kp-logo.png" alt="" style="height: auto; width: 110%">
+          </div>
+          <div>
+            <p style="font-size:0.9em;color:grey;margin-top:15%">Address: 8th Cross Rd, Bhuvaneswari Nagar, Dasarahalli, Bengaluru, Karnataka 560092</p>
+            <p></p>
+          </div>
+        </div>
+      <div class="col-sm-2" style="padding: 5% 0 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">CONTACT</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <p>info@krispypapad.com</p>
+             <p>Mobile no.</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-2" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">KRISPY PAPAD</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <p>About</p>
+             <p>Careers</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-2" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">LEGAL</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <a href="legal.html" style="color:grey"><p>Terms</p></a>
+             <p>Privacy Policy</p>
+           </div>
+        </div>
+      </div>
+      <div class="col-sm-3" style="padding: 5% 0% 4% 8%">
+        <div>
+           <p style="font-weight:bold;font-size:0.9em;color:grey">SOCIAL MEDIA</p>
+           <div style="font-weight:bold;font-size:1.3em;color:grey">
+             <p><i class="fa fa-facebook-square social-icons" style="color:#3b5998"></i>Facebook</p>
+             <p><i class="fa fa-instagram social-icons" style="color:#cd486b"></i>Instagram</p>
+             <p><i class="fa fa-twitter social-icons" style="color:#00aced"></i>Twitter</p>
+             <p><i class="fa fa-linkedin-square social-icons" style="color:#0077b5"></i>LinkedIn</p>
+           </div>
+        </div>
+      </div>
+      </div>
+
+    </div>
+
+    <!--new accordian-->
+    <div class="">
+      <div class="hidden-sm hidden-md hidden-lg">
+        <div class="tab blue">
+          <input id="tab-one" type="radio" name="tabs2" onclick="function1()">
+          <label for="tab-one">CONTACT</label>
+          <div class="tab-content">
+           <p>info@krispypapad.com</p>
+            <p>Mobile no.</p>
+           </div>
+        </div>
+          <div class="tab blue">
+            <input id="tab-two" type="radio" name="tabs2" onclick="function2()">
+            <label for="tab-two">KRISPY PAPAD</label>
+            <div class="tab-content">
+              <p>About</p>
+              <p>Careers</p>
+            </div>
+        </div>
+          <div class="tab blue">
+            <input id="tab-three" type="radio" name="tabs2" onclick="function3()">
+            <label for="tab-three">LEGAL</label>
+            <div class="tab-content">
+              <p>Terms</p>
+              <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="tab blue">
+          <input id="tab-four" type="radio" name="tabs2" onclick="function4()">
+          <label for="tab-four">SOCIAL MEDIA</label>
+          <div class="tab-content">
+            <p><i class="fa fa-facebook-square social-icons" style="color:#3b5998"></i>Facebook</p>
+            <p><i class="fa fa-instagram social-icons" style="color:#cd486b"></i>Instagram</p>
+            <p><i class="fa fa-twitter social-icons" style="color:#00aced"></i>Twitter</p>
+          </div>
+      </div>
+      </div>
+
+    </div>
+
+    <!--lower footer for lg md and sm-->
+    <div >
+     <div class="hidden-xs hidden-sm">
+       <div class="footer">
+         <div class="row">
+           <div class="col-sm-6">
+             <p style="padding: 3% 0% 0% 10%">Made with <i class="fa fa-heart" style="color: #F44336;font-size:0.9em"></i> in India</p>
+           </div>
+           <div class="col-sm-6">
+             <a href="www.heymedy.com" style="text-decoration:none;color:#757575"><p style="padding: 3% 0% 0% 35%">Copyrights &copy; 2017 Krispy Papad LLP</p></a>
+           </div>
+         </div>
+         </div>
+       </div>
+    </div>
+    <!--lower footer for sm-->
+    <div class="hidden-lg hidden-md hidden-xs">
+      <div class="footer-sm" style="">
+        <div class="text-center" style="padding-top: 10px">
+            <p style="padding-top: 0px">Made with <i class="fa fa-heart" style="color: #F44336;font-size:0.9em"></i> in India</p>
+            <a href="www.heymedy.com" style="text-decoration:none;color:#757575"><p style="margin-top: -10px">Copyrights &copy; 2017 Krispy Papad LLP</p></a>
+          </div>
+      </div>
+    </div>
+    <!--lower footer for xs-->
+    <div >
+     <div class="hidden-lg hidden-md hidden-sm">
+          <div class="footer-xs">
+            <p style="margin-bottom: -10px;padding-top: 5px">Made with <i class="fa fa-heart" style="color: #F44336;;font-size:0.9em"></i> in India<br>Copyrights &copy; 2017 Krispy Papad LLP </p>
+          </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
